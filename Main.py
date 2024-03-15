@@ -16,6 +16,8 @@ import time
 data_dir= '../../dataset/'
 model_dir = '../../weights/'
 
+#train the models
+
 def train_step(model,static,moving, criterion, optimizer):
     nb, nh, nw, nc = tf.keras.backend.int_shape(moving)
     with tf.GradientTape() as tape:
